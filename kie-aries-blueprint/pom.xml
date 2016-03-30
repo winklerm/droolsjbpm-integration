@@ -104,6 +104,8 @@
     <dependency>
       <groupId>org.apache.aries.blueprint</groupId>
       <artifactId>org.apache.aries.blueprint.noosgi</artifactId>
+      <!-- the version needs to be moved elsewhere -->
+      <version>1.1.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>

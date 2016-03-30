@@ -17,29 +17,29 @@ package org.kie.aries.blueprint.tests;
 
 
 import org.apache.aries.blueprint.container.BlueprintContainerImpl;
-import org.kie.api.runtime.KieSession;
-import org.kie.aries.blueprint.KieBlueprintContainer;
-import org.kie.aries.blueprint.factorybeans.KieListenerAdaptor;
-import org.kie.aries.blueprint.mocks.MockAgendaEventListener;
-import org.kie.aries.blueprint.mocks.MockProcessEventListener;
-import org.kie.aries.blueprint.mocks.MockRuleRuntimeEventListener;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.kie.api.KieBase;
 import org.kie.api.event.process.ProcessEventListener;
 import org.kie.api.event.rule.AgendaEventListener;
 import org.kie.api.event.rule.RuleRuntimeEventListener;
+import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.StatelessKieSession;
+import org.kie.aries.blueprint.KieBlueprintContainer;
+import org.kie.aries.blueprint.factorybeans.KieListenerAdaptor;
+import org.kie.aries.blueprint.mocks.MockAgendaEventListener;
+import org.kie.aries.blueprint.mocks.MockProcessEventListener;
+import org.kie.aries.blueprint.mocks.MockRuleRuntimeEventListener;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
-@Ignore("Add when org.apache.aries.blueprint.noosgi 1.0.1 is released")
 public class KieBlueprintListenerTest {
 
     static BlueprintContainerImpl container = null;

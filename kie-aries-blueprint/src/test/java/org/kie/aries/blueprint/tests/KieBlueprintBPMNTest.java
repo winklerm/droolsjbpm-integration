@@ -15,26 +15,24 @@
  */
 package org.kie.aries.blueprint.tests;
 
-import java.net.URL;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.apache.aries.blueprint.container.BlueprintContainerImpl;
 import org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.manager.RuntimeManager;
 import org.kie.aries.blueprint.KieBlueprintContainer;
 
-import static org.junit.Assert.*;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-@Ignore("Add when org.apache.aries.blueprint.noosgi 1.0.1 is released")
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
 public class KieBlueprintBPMNTest {
 
     static BlueprintContainerImpl container = null;
